@@ -7,4 +7,4 @@ This repo contains the official source code for ideaNotes.
 
 This app is currently in progress.
 
-<a href="https://github.com/stefanluiken/"><img src="" title="ideaNotes" alt="ideaNotes"></a>
+<a href="https://github.com/stefanluiken/ideaNotes"><img src="https://github.com/stefanluiken/ideaNotes/blob/master/ideanotes.png" title="ideaNotes" alt="ideaNotes"></a>
