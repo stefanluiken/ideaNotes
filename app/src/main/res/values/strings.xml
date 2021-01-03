@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Idea Notes</string>
+    <string name="ideanotes">ideaNotes</string>
+    <string name="idea_title">Idea title</string>
+    <string name="idea_subtitle">Idea subtitle</string>
+    <string name="type_your_ideas_here">Type your ideas here ...</string>
+</resources>
