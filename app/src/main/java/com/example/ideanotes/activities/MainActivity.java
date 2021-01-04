@@ -1,4 +1,4 @@
-package com.example.ideanotes;
+package com.example.ideanotes.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.ideanotes.R;
+import com.example.ideanotes.activities.CreateNoteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
