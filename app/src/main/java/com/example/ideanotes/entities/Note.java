@@ -56,7 +56,7 @@ public class Note implements Serializable {
     }
 
     public void setDateTime(String dateTime) {
-        dateTime = dateTime;
+        this.dateTime = dateTime;
     }
 
     public String getSubtitle() {
