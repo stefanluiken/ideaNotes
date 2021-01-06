@@ -1,6 +1,9 @@
 package com.example.ideanotes.activities;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,14 +15,20 @@ import android.widget.ImageView;
 
 import com.example.ideanotes.R;
 import com.example.ideanotes.activities.CreateNoteActivity;
+import com.example.ideanotes.adapters.NotesAdapter;
 import com.example.ideanotes.database.NotesDatabase;
 import com.example.ideanotes.entities.Note;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final int requestCoreAddNote = 1;
+
+    private RecyclerView notesRecyclerView;
+    private List<Note> noteList;
+    private NotesAdapter notesAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
                 );
             }
         });
+
+        notesRecyclerView = findViewById(R.id.notesRecyclerView);
+        notesRecyclerView.setLayoutManager(
+                new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        );
+
+        noteList = new ArrayList<>();
+        notesAdapter = new NotesAdapter(noteList);
+        notesRecyclerView.setAdapter(notesAdapter);
+
         getNotes();
     }
     private void getNotes(){
@@ -51,11 +70,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(List<Note> notes) {
                 super.onPostExecute(notes);
-                Log.d("MY_IDEAS", notes.toString());
+                if (noteList.size() == 0){
+                    noteList.addAll(notes);
+                    notesAdapter.notifyDataSetChanged();
+                } else {
+                    noteList.add(0, notes.get(0));
+                    notesAdapter.notifyItemInserted(0);
+                }
+                notesRecyclerView.smoothScrollToPosition(0);
             }
         }
 
         new GetNotesTask().execute();
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == requestCoreAddNote && resultCode == RESULT_OK) {
+            getNotes();
+        }
     }
 }
