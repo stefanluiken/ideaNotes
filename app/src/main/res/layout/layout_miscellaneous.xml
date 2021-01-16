@@ -157,8 +157,7 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_margin="@dimen/_10sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        tools:ignore="UseCompoundDrawables">
+        android:orientation="horizontal">
         
         <ImageView
             android:layout_width="@dimen/_22sdp"
@@ -173,7 +172,7 @@
             android:layout_marginStart="@dimen/_10sdp"
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
-            android:text="@string/add_image"
+            android:text="Add your image"
             android:textColor="@color/colorIcons"
             android:textSize="@dimen/_12ssp"/>
 
