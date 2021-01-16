@@ -1,10 +1,10 @@
 ## ideaNotes for Android
 
-ideaNotes is a notes app with a focus on speed and user experience. It’s superfast, simple and opensource.
-This repo contains the official source code for ideaNotes.
+ideaNotes is a notes app with a focus on speed and user experience. It is super fast, simple and open source.
+This repository contains the official source code for ideaNotes.
 
 ## Development status
 
-This app is currently in progress.
+This app is being built with Java. The development of this app is currently in progress.
 
 <a href="https://github.com/stefanluiken/ideaNotes"><img src="https://github.com/stefanluiken/ideaNotes/blob/master/ideanotes.png" title="ideaNotes" alt="ideaNotes"></a>
