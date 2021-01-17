@@ -18,17 +18,21 @@ import com.example.ideanotes.activities.CreateNoteActivity;
 import com.example.ideanotes.adapters.NotesAdapter;
 import com.example.ideanotes.database.NotesDatabase;
 import com.example.ideanotes.entities.Note;
+import com.example.ideanotes.listeners.NotesListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NotesListener {
 
     public static final int requestCoreAddNote = 1;
+    public static final int requestCodeUpdateNote = 2;
 
     private RecyclerView notesRecyclerView;
     private List<Note> noteList;
     private NotesAdapter notesAdapter;
+
+    private int noteClickedPosition = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +56,22 @@ public class MainActivity extends AppCompatActivity {
         );
 
         noteList = new ArrayList<>();
-        notesAdapter = new NotesAdapter(noteList);
+        notesAdapter = new NotesAdapter(noteList, this);
         notesRecyclerView.setAdapter(notesAdapter);
 
         getNotes();
     }
+
+    @Override
+    public void onNoteClicked(Note note, int position) {
+        noteClickedPosition = position;
+        Intent intent = new Intent(getApplicationContext(), CreateNoteActivity.class);
+        intent.putExtra("isViewOrUpdate", true);
+        intent.putExtra("note", note);
+        startActivityForResult(intent, requestCodeUpdateNote);
+
+    }
+
     private void getNotes(){
 
         @SuppressLint("StaticFieldLeak")
