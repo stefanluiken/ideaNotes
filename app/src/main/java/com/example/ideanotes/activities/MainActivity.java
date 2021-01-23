@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements NotesListener {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == requestCoreAddNote && resultCode == RESULT_OK) {
-            getNotes(requestCodeShowNotes, false);
+            getNotes(requestCoreAddNote, false);
         } else if (requestCode == requestCodeUpdateNote && resultCode == RESULT_OK) {
             if (data != null) {
                 getNotes(requestCodeUpdateNote, data.getBooleanExtra("isNoteDeleted", false));

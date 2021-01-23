@@ -72,7 +72,7 @@
         android:paddingBottom="@dimen/_12sdp"
         app:layout_constraintBottom_toTopOf="@id/layoutQuickActions"
         app:layout_constraintTop_toBottomOf="@id/layoutSearch" />
-    
+
     <LinearLayout
         android:id="@+id/layoutQuickActions"
         android:layout_width="match_parent"
@@ -85,6 +85,7 @@
 
         <ImageView
             android:id="@+id/imageAddNote"
+            android:visibility="invisible"
             android:layout_width="@dimen/_23sdp"
             android:layout_height="@dimen/_23sdp"
             android:contentDescription="@string/app_name"
@@ -93,6 +94,7 @@
 
         <ImageView
             android:id="@+id/imageAddImage"
+            android:visibility="invisible"
             android:layout_width="@dimen/_23sdp"
             android:layout_height="@dimen/_23sdp"
             android:layout_marginStart="@dimen/_15sdp"
@@ -102,6 +104,7 @@
 
         <ImageView
             android:id="@+id/imageAddWebLink"
+            android:visibility="invisible"
             android:layout_width="@dimen/_23sdp"
             android:layout_height="@dimen/_23sdp"
             android:layout_marginStart="@dimen/_15sdp"

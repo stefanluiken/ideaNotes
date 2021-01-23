@@ -318,7 +318,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 if(ContextCompat.checkSelfPermission(
                         getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE
                 ) != PackageManager.PERMISSION_GRANTED) {
@@ -396,6 +396,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             view.findViewById(R.id.textCancel).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     dialogDeleteNote.dismiss();
                 }
             });
@@ -445,7 +446,7 @@ public class CreateNoteActivity extends AppCompatActivity {
                 if (selectedImageUri != null) {
                     try {
 
-                        Toast.makeText(this, "Working", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(this, "Working", Toast.LENGTH_SHORT).show();
                         InputStream inputStream = getContentResolver().openInputStream(selectedImageUri);
                         Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                         imageNote.setImageBitmap(bitmap);
