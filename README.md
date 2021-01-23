@@ -14,5 +14,6 @@ Features:
 - Customizing notes with colours
 - Adding images
 - Adding URLs
+- Fully open source
 
 <a href="https://github.com/stefanluiken/ideaNotes"><img src="https://github.com/stefanluiken/ideaNotes/blob/master/ideanotes.png" title="ideaNotes" alt="ideaNotes"></a>
