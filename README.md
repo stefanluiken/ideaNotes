@@ -9,7 +9,7 @@ This app has been built with Java.
 Google Play
 --------------
 
-This app can be downloaded at the [Google Play](https://play.google.com/store/apps/details?id=com.sl.ideanotes) now!
+This app can be downloaded at [Google Play](https://play.google.com/store/apps/details?id=com.sl.ideanotes) now!
 
 Pre-requisites
 --------------
