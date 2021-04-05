@@ -23,6 +23,9 @@ Getting Started
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
 
+Screenshots
+---------------
+
 <a href="https://github.com/stefanluiken/ideaNotes"><img src="https://github.com/stefanluiken/ideaNotes/blob/master/ideanotes.png" title="ideaNotes" alt="ideaNotes"></a>
 
 Features
