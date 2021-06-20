@@ -4,12 +4,7 @@ ideaNotes app
 ideaNotes is a note taking app with a focus on speed and user experience.
 Ideas should be noted down before you forget them!
 
-This app has been built with Java.
-
-Google Play
---------------
-
-This app can be downloaded at [Google Play](https://play.google.com/store/apps/details?id=com.sl.ideanotes) now!
+This app is open source and has been built with Java.
 
 Pre-requisites
 --------------
