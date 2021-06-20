@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimary" format="color"/>
+    <attr name="colorPrimaryDark" format="color"/>
+    <attr name="colorText" format="color"/>
+    <attr name="purple_200" format="color"/>
+    <attr name="purple_500" format="color"/>
+    <attr name="purple_700" format="color"/>
+    <attr name="teal_200" format="color"/>
+    <attr name="teal_700" format="color"/>
+    <attr name="black" format="color"/>
+    <attr name="white" format="color"/>
+    <attr name="colorMainTitle">#FF000000</attr>
+    <attr name="colorSearchIcon" format="color"/>
+    <attr name="colorIcons" format="color"/>
+    <attr name="colorTextHint" format="color"/>
+    <attr name="colorQuickActionsBackground" format="color"/>
+    <attr name="colorTextSubtitle" format="color"/>
+    <attr name="colorDefaultNoteColor" format="color"/>
+    <attr name="colorNoteSubtitleText" format="color"/>
+    <attr name="colorMiscellaneousBackground" format="color"/>
+    <attr name="colorNoteColor2" format="color"/>
+    <attr name="colorNoteColor3" format="color"/>
+    <attr name="colorNoteColor4" format="color"/>
+    <attr name="colorNoteColor5" format="color"/>
+    <attr name="colorDelete" format="color"/>
+    <attr name="colorSearchBackground" format="color"/>
+</resources>

@@ -173,7 +173,7 @@
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
             android:text="Add your image"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"/>
 
 
