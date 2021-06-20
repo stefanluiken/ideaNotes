@@ -26,7 +26,7 @@ Screenshots
 Features
 ---------------
 
-- Clean overview of all notes
+- Clean overview of all notes (dark mode)
 - Customizing notes with colours
 - Adding images
 - Adding URLs
