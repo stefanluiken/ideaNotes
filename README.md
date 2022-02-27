@@ -1,4 +1,4 @@
-ideaNotes app
+ideaNotes
 ===================================
 
 ideaNotes is a note taking app with a focus on speed and user experience.
